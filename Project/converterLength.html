@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Conversions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/unit.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <a class="brand" href="./index.html">Conversion</a>
+            <div class="menu">
+                <div class="btn">
+                    <i class="close-icon fa-solid fa-xmark close-btn"></i>
+                </div>
+                <ul class="nav">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li>
+                        <a href="./unitConvesion.html">unit group
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="./converterLength.html">length</a></li>
+                            <li><a href="./converterArea.html">Area</a></li>
+                            <li><a href="./converterVolume.html">Volume</a></li>
+                            <li><a href="./converterMass.html">Mass</a></li>
+                            <li><a href="./converterTemperature.html">Temperature</a></li>
+                            <li><a href="./converterCurrency.html">Currency</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">support</a></li>
+                    <li><a href="#">member</a></li>
+                    <li> <a href="#">sign in
+                            <!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn">
+                <i class="menu-icon fa-solid fa-bars menu-btn"></i>
+            </div>
+            <!-- <div class="search">
+                <input type="text" placeholder="Search" class="search-input">
+                <a href=""><i class="search-icon fa-solid fa-magnifying-glass"></i></a>
+            </div> -->
+        </div>
+        <!-- Banner -->
+        <div class="slider">
+            <img class="banner" src="./images/z3890065311574_d2e3e3f08bdacd77b2485162fdf496cc.jpg" alt="banner">
+        </div>
+        <!-- Content -->
+        <div class="container">
+            <div class="convert-tab">
+                <h1 class="title-table">length converter</h1>
+                <div id="input-result">
+                    <input type="number" min="0" placeholder="input" id="input">
+                    <span>=</span>
+                    <input type="number" min="0" placeholder="result" readonly="true" id="result">
+
+                <select id="inputType" class="input-style">
+                    <option value="meter">Meter (m)</option>
+                    <option value="kilometer">Kilometer (km)</option>
+                    <option value="centimeter">Centimeter (cm)</option>
+                    <option value="yard">Yard (yd)</option>
+                    <option value="inch">Inch (in)</option>
+                    <option value="feet">Feet (ft)</option>
+                    <option value="mile">Mile (mi)</option>
+                    <option value="millimeter">Millimeter (mm)</option>
+                </select>
+
+                <select id="resultType" class="result-style">
+                    <option value="meter">Meter (m)</option>
+                    <option value="kilometer">Kilometer (km)</option>
+                    <option value="centimeter">Centimeter (cm)</option>
+                    <option value="yard">Yard (yd)</option>
+                    <option value="inch">Inch (in)</option>
+                    <option value="feet">Feet (ft)</option>
+                    <option value="mile">Mile (mi)</option>
+                    <option value="millimeter">Millimeter (mm)</option>
+                </select>
+                </div>
+                <div class="note">
+                    <p>Nhap chu so </p>
+                </div>
+            </div>
+            <div class="conversion-length">
+                <h1 class="title">length</h1>
+                <p class="content">
+                    <span>Content</span>
+                    <!-- <span>readmore</span> -->
+                </p>
+                <h1 class="title">History</h1>
+                <p class="content">
+                    <span>Content</span>
+                    <!-- <span>readmore</span> -->
+                </p>
+            </div>
+        </div>
+        <div id="mapholder"></div>
+        <!-- footer -->
+        <div class="footer">
+            <p class="copyright">Copyright @ 2022 by T2206M | FPT - Aptech HN</p>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/convert.js"></script>
+
+</html>
